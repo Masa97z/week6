@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">week6</string>
+    <string name="_150_reviews_4_5">(150 Reviews) 4.5</string>
+    <string name="iq">IQ</string>
+    <string name="engineer">Engineer</string>
+    <string name="mohammed_salehi">Mohammed Salehi</string>
 </resources>

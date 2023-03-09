@@ -3,72 +3,99 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".MainActivity"
-    android:layout_margin="16dp">
+    android:layout_margin="16dp"
+    android:background="@drawable/backgroundstyle"
+    >
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        style="@style/ImageView"
+        android:src="@drawable/img1"
+
+        />
 
     <LinearLayout
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_weight="1"
         android:orientation="vertical"
-        >
+        android:paddingTop="8dp"
+        android:paddingStart="8dp">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:textStyle="bold"
+            android:textSize="16sp"
+
+            android:layout_marginBottom="4dp"
+            android:text="@string/mohammed_salehi" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="@string/engineer"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="4dp"/>
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_marginBottom="8dp"
+            android:drawableStart="@drawable/location"
+            android:drawableTint="#ff0000"
+            android:text="@string/iq" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:textStyle="bold"
+            android:text="@string/_150_reviews_4_5"
+            android:drawableEnd="@drawable/baseline_star_24"/>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="199dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:orientation="vertical"
+        android:gravity="end">
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="match_parent"
+
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_marginBottom="8dp"
+            android:text="  3 hr  "
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@drawable/hr"/>
 
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:textStyle="bold"
+            android:text="Iraq" />
 
         <TextView
             android:id="@+id/textView7"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_marginTop="4dp"
+            android:text="5 Days ago" />
     </LinearLayout>
 
 </LinearLayout>
