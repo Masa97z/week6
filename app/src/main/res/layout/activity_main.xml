@@ -13,89 +13,100 @@
         android:id="@+id/imageView"
         android:layout_width="128dp"
         android:layout_height="128dp"
-        style="@style/ImageView"
-        android:src="@drawable/img1"
-
-        />
+        android:layout_marginStart="@dimen/normalSize"
+        android:layout_marginTop="@dimen/normalSize"
+        android:layout_marginBottom="@dimen/normalSize"
+        android:src="@drawable/img" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingTop="8dp"
-        android:paddingStart="8dp">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="16sp"
+            android:layout_marginStart="@dimen/normalSize"
 
-            android:layout_marginBottom="4dp"
-            android:text="@string/mohammed_salehi" />
+            android:layout_marginTop="@dimen/largeSize"
+            android:layout_marginBottom="@dimen/normalSize"
+            android:fontFamily="@font/dm_sans_bold"
+            android:text="@string/mohammed_salehi"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normalSize"
+            android:layout_marginBottom="@dimen/normalSize"
+            android:fontFamily="@font/dm_sans_medium"
             android:text="@string/engineer"
-            android:textStyle="bold"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="4dp"/>
+            android:textColor="#DE122940"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:drawableStart="@drawable/location"
-            android:drawableTint="#ff0000"
-            android:text="@string/iq" />
+            android:layout_marginStart="@dimen/normalSize"
+            android:layout_marginBottom="@dimen/normalSize"
+            android:text="@string/iq"
+            android:textColor="#99263238"
+            app:drawableTint="#ff0000"
+            app:drawableStartCompat="@drawable/location" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
+            android:layout_marginStart="@dimen/normalSize"
+            android:drawableEnd="@drawable/baseline_star_24"
+            android:fontFamily="@font/dm_sans"
             android:text="@string/_150_reviews_4_5"
-            android:drawableEnd="@drawable/baseline_star_24"/>
+            android:textColor="#000000"
+            android:textStyle="normal" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="8dp"
-        android:paddingEnd="16dp"
-        android:orientation="vertical"
-        android:gravity="end">
+        android:gravity="end"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView5"
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:text="  3 hr  "
-            android:textSize="16sp"
+            android:layout_marginTop="@dimen/largeSize"
+            android:layout_marginEnd="@dimen/normalSize"
+            android:layout_marginBottom="@dimen/normalSize"
+            android:background="@drawable/hr"
+            android:text="@string/_3_hr"
             android:textColor="@color/white"
-            android:background="@drawable/hr"/>
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="4dp"
-            android:textStyle="bold"
-            android:text="Iraq" />
+            android:layout_marginEnd="@dimen/normalSize"
+            android:layout_marginBottom="@dimen/normalSize"
+            android:text="@string/iraq"
+            android:textColor="#DE122940"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="5 Days ago" />
+            android:layout_marginEnd="@dimen/normalSize"
+            android:fontFamily="@font/dm_sans"
+            android:text="5 Days ago"
+            android:textColor="#61122940" />
     </LinearLayout>
 
 </LinearLayout>
