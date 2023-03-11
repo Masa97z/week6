@@ -6,13 +6,13 @@
     android:layout_height="wrap_content"
     tools:context=".MainActivity"
     android:layout_margin="16dp"
-    android:background="@drawable/backgroundstyle"
-    >
+    android:background="@drawable/backgroundstyle">
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imageView"
         android:layout_width="128dp"
         android:layout_height="128dp"
+        style="@style/ImageView"
         android:layout_marginStart="@dimen/normalSize"
         android:layout_marginTop="@dimen/normalSize"
         android:layout_marginBottom="@dimen/normalSize"
@@ -21,7 +21,8 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
 
         <TextView
             android:id="@+id/textView"
@@ -56,25 +57,26 @@
             android:layout_marginBottom="@dimen/normalSize"
             android:text="@string/iq"
             android:textColor="#99263238"
-            app:drawableTint="#ff0000"
-            app:drawableStartCompat="@drawable/location" />
+            app:drawableStartCompat="@drawable/location"
+            app:drawableTint="#ff0000" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/normalSize"
-            android:drawableEnd="@drawable/baseline_star_24"
             android:fontFamily="@font/dm_sans"
             android:text="@string/_150_reviews_4_5"
             android:textColor="#000000"
-            android:textStyle="normal" />
+            android:textStyle="normal"
+            app:drawableEndCompat="@drawable/baseline_star_24" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="end"
+
         android:orientation="vertical">
 
         <TextView
@@ -85,7 +87,7 @@
             android:layout_marginEnd="@dimen/normalSize"
             android:layout_marginBottom="@dimen/normalSize"
             android:background="@drawable/hr"
-            android:text="@string/_3_hr"
+            android:text="  3 hr  "
             android:textColor="@color/white"
             android:textSize="16sp" />
 
